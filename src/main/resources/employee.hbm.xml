@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"-->
+<!--"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">-->
+<!DOCTYPE hibernate-mapping SYSTEM
+        "classpath://org/hibernate/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.github.alexv1993.hibernate.model.Employee" table="EMPLOYEE">
+        <id name="ID" type="int">
+            <column name="ID"/>
+            <generator class="increment"/>
+        </id>
+        <property name="NAME" type="java.lang.String">
+            <column name="NAME"/>
+        </property>
+        <property name="ROLE" type="java.lang.String">
+            <column name="ROLE"/>
+        </property>
+        <property name="INSERT_TIME" type="timestamp">
+            <column name="INSERT_TIME"/>
+        </property>
+    </class>
+</hibernate-mapping>
